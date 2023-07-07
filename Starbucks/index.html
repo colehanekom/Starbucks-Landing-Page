@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page using HTML,CSS AND Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <div class="navbar">
+<img src="img/logo.png" alt="logo" class="logo">
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="text">
+<h1>It's not just Coffee <br /> It's<span> Starbucks</span></h1>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <br />
+    Vero eum enim iste maxime magnam excepturi neque consequatur sunt veniam quasi
+    <br />
+    in voluptates accusamus ea. Aperiam ullam nam autem.
+</p>
+<br />
+    <a href="#" class="button"><span></span>Learn More</a>
+</div>
+
+<div class="content-img">
+    <img src="img/img1.png" alt="img" class="images-coffee">
+</div>
+
+<div class="icons">
+   <img src="img/facebook.png" alt="image-icons" /> <br>
+   <img src="img/twitter.png" alt="image-icons" /> <br>
+   <img src="img/instagram.png" alt="image-icons" />
+</div>
+
+<div class="thumb">
+    <img src="img/thumb1.png" onclick="imgslide('img/img1.png'); changecolor('#017143')"alt="image" />
+    <img src="img/thumb2.png" onclick="imgslide('img/img2.png'); changecolor('#eb7495')" alt="image" />
+    <img src="img/thumb3.png" onclick="imgslide('img/img3.png'); changecolor('#d752b1')" alt="image" />
+</div>
+    </section>
+
+    <script>
+        function imgslide(any){
+            document.querySelector(".images-coffee").src = any;
+        }
+
+        function changecolor(color){
+            const circle = document.querySelector(".circle");
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
