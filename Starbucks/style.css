@@ -96,15 +96,20 @@ text p{
     width: 390px;
     margin-left: 25%;
 }
-.icons{
+.icons {
+    display: flex;
+    flex-direction: column; /* Align icons vertically */
+    align-items: center; /* Center icons horizontally */
     margin-top: 15%;
     margin-right: 40px;
 }
-.icons img{
+
+.icons img {
     transform: scale(0.5);
-    padding-bottom: 3px;
+    margin-bottom: 10px; /* Add some margin between icons */
     filter: invert(1);
 }
+
 
 .circle{
     background-color: #017143;
